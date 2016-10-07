@@ -16,5 +16,18 @@ namespace ClassPractice
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string val1 = txtVal1.Text;
+            string val2 = txtVal2.Text;
+            string debugMsg = "val 1:" + val1 + "      Val2: " + val2;
+            MessageBox.Show(debugMsg);
+            ValueInput value1 = new ValueInput(val1, val2);
+            lblFinalOutput.Text = value1.getValues();
+
+
+
+        }
     }
 }
